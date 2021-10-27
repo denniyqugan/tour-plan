@@ -21,11 +21,18 @@
         color: inherit
     &-wrapper
         display: flex
-        flex-wrap: wrap 
+        flex-wrap: wrap
         align-items: center
     &-description
         font-size: 12px
         line-height: 15px
+    &-grid
+        display: flex
+        justify-content: space-between
+    &-right
+        display: flex
+        flex-direction: column
+        justify-content: space-between
 .stars
     flex-basis: 100%
 .offer
@@ -50,21 +57,21 @@
         line-height: 18px
 
 .swiper
-  width: 100%
-  height: 450px
-  position: relative
-  border-radius: 8px
-  &::after
-      content: ''
-      position: absolute
-      width: 100%
-      height: 100%
-      top: 0
-      bottom: 0
-      left: 0
-      right: 0
-      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-      z-index: 10
+    width: 100%
+    height: 450px
+    position: relative
+    border-radius: 8px
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+        z-index: 10
 
 .slider
     width: 728px
@@ -75,7 +82,7 @@
         z-index: 99
         width: 30px
         height: 30px
-        border: none 
+        border: none
         cursor: pointer
         background-repeat: no-repeat
         background-position: center
@@ -88,3 +95,84 @@
             background-image: url(../image/arrow-next.svg)
             right: 18px
 
+.booking
+    background-color: $dark
+    color: $light
+    border-radius: 8px
+    width: 350px
+    min-height: 210px
+    padding: 28px
+    // margin-bottom: 27px
+    &__info
+        display: flex
+        justify-content: space-between
+        margin-bottom: 9px
+    &__price
+        display: flex
+        flex-direction: column
+    &__start
+        font-weight: normal
+        font-size: 10px
+        line-height: 14px
+    &__pricetag
+        font-style: normal
+        font-weight: 800
+        font-size: 24px
+        line-height: 33px
+    &__per-room
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 16px
+    &__room
+        margin-top: 4px
+    &__text
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 8px
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 16px
+    &__description
+        margin-left: 9px
+    &__call-center
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 17px
+    &__heading
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+    &__number
+        display: flex
+        align-items: center
+        justify-content: space-between
+        text-decoration: none
+        color: $light
+    &__num
+        margin-left: 8px
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+    &__button
+        width: 100%
+        min-height: 45px
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        border-radius: 4px
+        border: none
+        background-color: $primary
+        color: $light
+        cursor: pointer
+.map
+    width: 347px
+    height: 213px
+    background-color: #000000
+    border-radius: 8px
