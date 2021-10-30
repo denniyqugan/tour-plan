@@ -1,0 +1,96 @@
+.reviews
+    padding: 40px 0 70px 0
+    &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 70px
+    &-slider
+        &__item
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 730px
+            margin: 45px auto 0
+            background-color: #fff
+            border-radius: 8px
+            padding: 0 97px 30px
+            &::before
+                content: ''
+                width: 70px
+                height: 47px
+                position: absolute
+                left: 62px
+                top: 13px
+                background-image: url(../image/quote-left.svg)
+                background-repeat: no-repeat
+            &::after
+                content: ''
+                width: 70px
+                height: 47px
+                position: absolute
+                right: 60px
+                top: 118px
+                background-image: url(../image/quote-right.svg)
+                background-repeat: no-repeat
+        &__button
+            position: absolute
+            transform: translateY(-500%)
+            width: 30px
+            height: 30px
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 10px
+            border: none
+            background-color: transparent
+            cursor: pointer
+            z-index: 99
+            &--prev
+                background-image: url(../image/arrow-prev-primery.svg)
+                left: 0
+            &--next
+                background-image: url(../image/arrow-next-primery.svg)
+                right: 0
+
+        &__profile
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: -45px
+        &__avatar
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            object-fit: cover
+            margin-bottom: 8px
+        &__username
+            margin-top: 0
+            margin-bottom: 10px
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 15px
+            color: $primary
+        &__date
+            margin-bottom: 4px
+            font-style: normal
+            font-weight: normal
+            font-size: 10px
+            line-height: 13px
+        &__rating
+            display: flex
+            align-items: center
+            line-height: 3px
+            margin-bottom: 32px
+        &__text
+            font-style: normal
+            font-weight: normal
+            font-size: 12px
+            line-height: 160%
+            text-align: justify
+            margin: auto 
+            width: 537px

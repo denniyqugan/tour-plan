@@ -15,7 +15,10 @@
     .container
         max-width: 1000px
         margin: auto
-@media (max-width:1037px)
+    .hotel
+        &-slider
+           width: 626px
+@media (max-width:1036px)
     .container
         max-width: 890px
     .search
@@ -23,8 +26,9 @@
             width: 340px
     .booking
         width: 340px
-    .slider
-        width: 525px
+    .hotel
+        &-slider
+           width: 525px
     .map
         width: 340px
 
@@ -56,10 +60,11 @@
             margin-bottom: 30px
         &-right
             flex-direction: row
+        &-slider
+           width: 100%
+        
     .booking
         width: 340px
-    .slider
-        width: 100%
     .map
         width: 340px
 
@@ -142,8 +147,8 @@
             padding-bottom: 26px
     .hotel
         padding-bottom: 40px
-    .slider
-        height: 179px
+        &-slider
+           height: 179px
     .hotel-right
         min-height: 402px
     .map
