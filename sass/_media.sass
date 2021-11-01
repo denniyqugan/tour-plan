@@ -81,8 +81,8 @@
                 font-size: 12px
 
 @media (max-width: 768px)
-    .container, .newsletter-wrapper
-        max-width: 576px
+    .container
+        width: 92.7%
     .navbar
         &__search, &-menu, &__user
             display: none
@@ -136,10 +136,11 @@
         &-wrapper
             flex-direction: column
             align-items: flex-start
-            max-width: 576px
-            width: 100%
+            width: 92%
+            // width: 100%
     .subscribe
         width: 100%
+    
     .reviews
         &__title
             font-style: normal
@@ -157,11 +158,11 @@
                 top: 32px
                 &--prev
                     left: 50%
-                    margin-left: -65px
+                    margin-left: -88px
                     transform: translate(-50%, 0)
                 &--next
                     right: 50%
-                    margin-right: -65px
+                    margin-right: -88px
                     transform: translate(50%, 0)
 
 @media (max-width: 576px)
@@ -190,6 +191,8 @@
             padding-bottom: 26px
     .hotel
         padding-bottom: 40px
+        &-info
+            padding-bottom: 38px
         &-slider
             height: 179px
     .hotel-right
@@ -203,6 +206,7 @@
             font-weight: 300
             font-size: 20px
             line-height: 25px
+            margin: 0 0 46px
             &__strong
                 font-family: Mulish
                 font-style: normal
@@ -219,4 +223,8 @@
             line-height: 23px
             text-align: center
             text-transform: uppercase
-            margin-bottom: 42px
+            margin: 0 auto 42px
+            width: 193px
+        &-slider
+           &__text
+              text-align: left

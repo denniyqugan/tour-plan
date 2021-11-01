@@ -533,7 +533,7 @@ template {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 8px 0 0 0;
 }
 
 .hotel-name {
@@ -637,6 +637,7 @@ template {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  line-height: 3px;
 }
 
 .offer {
@@ -807,7 +808,7 @@ template {
 
 .newsletter {
   position: relative;
-  padding: 98px 0 87px 0;
+  padding: 73px 0 72px 0;
   background-image: url(../image/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -913,6 +914,7 @@ template {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 70px;
+  margin-top: 0;
 }
 
 .reviews-slider__item {
@@ -1155,8 +1157,8 @@ template {
 }
 
 @media (max-width: 768px) {
-  .container, .newsletter-wrapper {
-    max-width: 576px;
+  .container {
+    width: 92.7%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
@@ -1243,8 +1245,7 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    max-width: 576px;
-    width: 100%;
+    width: 92%;
   }
   .subscribe {
     width: 100%;
@@ -1268,13 +1269,13 @@ template {
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -65px;
+    margin-left: -88px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -65px;
+    margin-right: -88px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
@@ -1313,6 +1314,9 @@ template {
   .hotel {
     padding-bottom: 40px;
   }
+  .hotel-info {
+    padding-bottom: 38px;
+  }
   .hotel-slider {
     height: 179px;
   }
@@ -1330,6 +1334,7 @@ template {
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
+    margin: 0 0 46px;
   }
   .newsletter-title__strong {
     font-family: Mulish;
@@ -1348,7 +1353,11 @@ template {
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 42px;
+    margin: 0 auto 42px;
+    width: 193px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
