@@ -10,20 +10,27 @@
                 height: 100%
                 width: 100%
                 object-fit: cover
+    .card
+        width: 230px
+        height: 230px
     .reviews
         &__title
             margin-top: 0
 
 @media (max-width: 1150px)
     .container
-        max-width: 1000px
+        max-width: 996px
         margin: auto
     .hotel
         &-slider
             width: 626px
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+
 @media (max-width:1036px)
     .container
-        max-width: 890px
+        width: 92%
     .search
         &__input
             width: 340px
@@ -71,14 +78,23 @@
     .map
         width: 340px
     .reviews
-            &__title
-                font-size: 30px
-                line-height: 38px
-                margin-bottom: 50px
+        &__title
+            font-size: 30px
+            line-height: 38px
+            margin-bottom: 50px
             &__item
                 max-width: 580px
             &__text
                 font-size: 12px
+
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
+    .card
+        width: 340px
+        height: 255px
 
 @media (max-width: 768px)
     .container
@@ -128,7 +144,6 @@
             min-height: 450px
     .booking
         width: 100%
-        // margin-bottom: 20px
     .map
         width: 100%
     .newsletter
@@ -137,10 +152,9 @@
             flex-direction: column
             align-items: flex-start
             width: 92%
-            // width: 100%
     .subscribe
         width: 100%
-    
+
     .reviews
         &__title
             font-style: normal
@@ -164,6 +178,13 @@
                     right: 50%
                     margin-right: -88px
                     transform: translate(50%, 0)
+    .activities
+        padding: 60px 0 70px
+        &__title
+            margin-top: 0
+    .card
+        width: 49%
+        height: 255px
 
 @media (max-width: 576px)
     .container
@@ -181,6 +202,11 @@
     .subscribe
         width: 100%
         margin: auto
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+    .card
+        width: 100%
 
 @media (max-width: 320px)
     .container, .newsletter-wrapper
@@ -216,6 +242,7 @@
     .subscribe
         width: 100%
     .reviews
+        padding: 40px 0 50px
         &__title
             font-style: normal
             font-weight: bold
@@ -226,5 +253,16 @@
             margin: 0 auto 42px
             width: 193px
         &-slider
-           &__text
-              text-align: left
+            &__text
+                text-align: left
+    .activities
+        padding: 40px 0 60px
+        &__title
+            margin-bottom: 36px
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-transform: uppercase
+    .card
+        width: 100%
