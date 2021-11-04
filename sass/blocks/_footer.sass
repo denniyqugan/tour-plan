@@ -31,6 +31,7 @@
             grid-column: span 2
         &-form
             grid-column: span 2
+
     &__form
         display: flex
         align-items: center
@@ -74,6 +75,13 @@
     &__link
         text-decoration: none
         color: $footer-text-color
+    &__conversion
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        // flex-direction: row-reverse
+        flex-wrap: wrap-reverse
     &__input
         background-color: #fff
         border-radius: 4px
@@ -117,3 +125,19 @@
         font-size: 12px
         line-height: 15px
         color: $footer-text-color
+
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        grid-row: 6
+        grid-column: 2 / 5
+    &__links
+        &--mb
+            margin-bottom: 10px
+    &__link
+        &--mr1
+            margin-right: 13px
+        
+
+    
