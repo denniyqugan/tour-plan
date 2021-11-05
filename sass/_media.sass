@@ -11,8 +11,8 @@
                 width: 100%
                 object-fit: cover
     .card
-        width: 230px
-        height: 230px
+        width: 250px
+        height: 250px
     .reviews
         &__title
             margin-top: 0
@@ -22,36 +22,48 @@
 
 @media (max-width: 1150px)
     .container
-        max-width: 996px
+        max-width: 956px
         margin: auto
     .hotel
         &-slider
-            width: 626px
-    .activities
-        &-wrapper
-            flex-wrap: wrap
+            width: 576px
+
+    .card
+        width: 230px
+        height: 230px
 
 @media (max-width:1036px)
     .container
-        width: 92%
+        max-width: 832px
     .search
         &__input
             width: 340px
     .booking
-        width: 340px
+        width: 406px
     .hotel
+        padding-bottom: 60px
+        &-grid
+            flex-direction: column
+        &__slider
+            margin-bottom: 30px
+        &-right
+            flex-direction: row
         &-slider
-            width: 525px
+            width: 100%
     .map
-        width: 340px
+        width: 406px
 
-@media (max-width: 996px)
-    .container, .newsletter-wrapper
-        max-width: 700px
+    .activities
+        &-wrapper
+            flex-wrap: wrap
+        &__card
+            margin-bottom: 20px
     .card
-        width: 340px
+        width: 49%
         height: 255px
-
+    
+    
+    
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -103,7 +115,7 @@
         &__card
             margin-bottom: 20px
     .card
-        width: 340px
+        width: 49%
         height: 255px
     .footer
         &-wrapper
@@ -387,6 +399,6 @@
             grid-column: 1
         &__link
             &--mr1
-                margin-bottom: 10px
+                margin-bottom: 4px
         &__pay
             flex-basis: 100%
