@@ -61,9 +61,7 @@
     .card
         width: 49%
         height: 255px
-    
-    
-    
+
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -148,7 +146,21 @@
         &__bottom
             grid-row: 6
             grid-column: 1 / 7
-
+    .modal
+        &__dialog
+            top: 40%
+            left: 50%
+        &__input
+            width: 280px
+        &__conversion
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-wrap: wrap-reverse
+        &__info
+            flex-basis: 100%
+            text-align: center
+            margin-bottom: 15px
 @media (max-width: 768px)
     .container
         width: 92%
@@ -205,14 +217,12 @@
                 height: 1px
                 background-color: $text-color
     .user
-        // margin-bottom: 27px
         &__name
             &--light
                 color: $light
                 margin-left: 0
                 margin-top: 10px
     .search
-        // margin-bottom: 39px
     .stars
         flex-basis: auto
     .hotel
@@ -356,7 +366,10 @@
                 font-size: 12px
                 line-height: 15px
                 margin-right: 10px
-
+    .modal
+        &__close
+            right: 90px
+            top: 30px
 
 @media (max-width: 320px)
     .container, .newsletter-wrapper
@@ -449,3 +462,22 @@
                 margin-right: 4px
         &__pay
             flex-basis: 100%
+
+    .modal
+        &__dialog
+            top: 30%
+            left: 50%
+        &__input
+            width: 280px
+        &__conversion
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-wrap: wrap-reverse
+        &__info
+            text-align: center
+            flex-basis: 100%
+            margin-bottom: 15px
+        &__close
+            right: 90px
+            top: 30px
