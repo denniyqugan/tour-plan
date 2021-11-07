@@ -49,4 +49,27 @@ $(document).ready(function () {
     closeModal(event)
     }
     });
+
+  // Обработка формы
+  $('.form').each(function(){
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Укажите Имя",
+          minlength: "Имя должно быть не короче 2 букв",
+        },
+        email: {
+          required: "Укажите свой почтовый адрес",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "Телефон обязателен"
+        },
+      },
+    });
+  });
+  $(document).ready(function(){
+    $(".input").mask("+7(999) 999-99-99");
+  });
 });
